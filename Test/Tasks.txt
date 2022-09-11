@@ -1,0 +1,8 @@
+﻿Первое задание: CalculatorsArea и CalculatorsArea.Tests
+Второе задание: 
+select [Categories].[Name], [Products].[Name] 
+from [Categories]
+	inner join [Products.To.Categories]
+		on [Categories].[Id] = [Products.To.Categories].[CategoryId]
+	right join [Products]
+		on [Products.To.Categories].[ProductId] = [Products].[Id]
